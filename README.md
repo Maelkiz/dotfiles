@@ -1,6 +1,6 @@
-# Noctalia + Niri dotfiles
+# Dotfiles
 
-This is a bare repo containing the dotfiles for my [Noctalia](https://github.com/noctalia-dev/noctalia-shell) + [Niri](https://github.com/niri-wm/niri) rice.
+This is a bare repo containing my dekstop environment agnostic configuration files.
 
 ---
 
@@ -14,7 +14,16 @@ If you have existing configs you don't want to lose, make sure to back them up f
 
 ## Prerequisites
 
-This setup assumes that you have [Noctalia](https://github.com/noctalia-dev/noctalia-shell) and [Niri](https://github.com/niri-wm/niri) installed on your system.
+The setup assumes the following are installed on your system:
+
+- ghostty
+- starship
+- fish
+- code
+- bash
+- git
+- vim
+- eza
 
 ---
 
@@ -27,7 +36,7 @@ git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" checkout -f && \
 git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" config --local status.showUntrackedFiles no
 ```
 
-Convenient alias:
+Convenient alias (included in the fish config):
 ```bash
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 ```
@@ -35,7 +44,7 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 It lets you use interact with the bare repo like this:
 ```bash
 dotfiles status
-dotfiles add .config/niri/config.kdl
+dotfiles add ~/.bashrc
 dotfiles commit -m "Update niri config"
 dotfiles push
 ```
@@ -43,11 +52,7 @@ dotfiles push
 Instead of like this:
 ```bash
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME status
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME add .config/niri/config.kdl
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m "Update niri config"
+git --git-dir=$HOME/.dotfiles --work-tree=$HOME add ~/.bashrc
+git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m "Update bash config"
 git --git-dir=$HOME/.dotfiles --work-tree=$HOME push
 ```
-
----
-
-> See https://github.com/Maelkiz/sddm-theme for my matching sddm theme.
