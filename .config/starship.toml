@@ -10,7 +10,7 @@ $git_commit\
 $git_status\
 $cmd_duration\
 $fill\
-${custom.fish_mode}\
+${custom.vim_mode}\
 $line_break\
 $character\
 """
@@ -32,8 +32,8 @@ symbol = " "
 [fill]
 symbol = " "
 
-[custom.fish_mode]
-command = "printf '%s' \"$FISH_MODE\""
+[custom.vim_mode]
+command = "printf '%s' \"$VIM_MODE\""
 when = "true"
 format = "[$output](blue bold)"
 shell = ["bash", "--noprofile", "--norc"]
