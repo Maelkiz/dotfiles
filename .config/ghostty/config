@@ -5,5 +5,8 @@ window-decoration = false
 window-padding-x = 8
 window-padding-y = 8
 
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+
 keybind = ctrl+tab=unbind
 keybind = ctrl+shift+tab=unbind
