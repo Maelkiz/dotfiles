@@ -33,11 +33,11 @@ set -g fish_cursor_default block
 function update_fish_mode --on-variable fish_bind_mode
     switch $fish_bind_mode
         case default
-            set -gx FISH_MODE [NORMAL]
+            set -gx VIM_MODE [NORMAL]
         case insert
-            set -gx FISH_MODE [INSERT]
+            set -gx VIM_MODE [INSERT]
         case visual
-            set -gx FISH_MODE [VISUAL]
+            set -gx VIM_MODE [VISUAL]
     end
 end
 
