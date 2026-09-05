@@ -5,7 +5,7 @@ if not status is-interactive
 end
 
 # Starship
-source (/usr/local/bin/starship init fish --print-full-init | psub)
+starship init fish | source
 
 function fish_greeting
     #fastfetch
