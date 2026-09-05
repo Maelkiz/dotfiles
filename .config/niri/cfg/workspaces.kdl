@@ -1,4 +1,0 @@
-workspace "default"
-workspace "browser"
-workspace "editor"
-workspace "chat"
