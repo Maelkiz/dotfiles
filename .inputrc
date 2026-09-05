@@ -1,0 +1,11 @@
+# Vim mode
+set editing-mode vi
+
+# Ctrl+Backspace
+"\C-H": backward-kill-word
+
+# Ctrl+Delete
+"\C-]": kill-word
+
+# Ctrl+Tab
+"\C-\C-I": complete
