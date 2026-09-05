@@ -1,3 +1,5 @@
+add_newline = false
+
 format = """
 $hostname\
 $sudo\
@@ -7,9 +9,12 @@ $git_branch\
 $git_commit\
 $git_status\
 $cmd_duration\
+$fill\
+${custom.fish_mode}\
 $line_break\
 $character\
 """
+
 [hostname]
 ssh_symbol = " "
 
@@ -23,3 +28,12 @@ truncation_symbol = "..."
 
 [git_branch]
 symbol = " "
+
+[fill]
+symbol = " "
+
+[custom.fish_mode]
+command = "printf '%s' \"$FISH_MODE\""
+when = "true"
+format = "[$output](blue bold)"
+shell = ["bash", "--noprofile", "--norc"]
