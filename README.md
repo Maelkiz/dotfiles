@@ -1,18 +1,12 @@
 # Dotfiles
 
-This is a bare repo containing my dekstop environment agnostic configuration files.
-
----
-
-> ### ⚠️ Warning!
-> The provided installation instructions might **overwrite existing files in your `$HOME` directory**.
-> If you have existing configs you don't want to lose, make sure to back them up first.
+This is a bare repo containing my desktop environment agnostic configuration files.
 
 ---
 
 ## Prerequisites
 
-The setup assumes the following are installed on your system:
+The setup assumes the following are installed on your system (package names might vary by distro):
 ```console
 ttf-jetbrains-mono-nerd \
 ghostty \
@@ -22,18 +16,27 @@ code \
 bash \
 git \
 vim \
-eza \
+eza
 ```
 
 ---
 
 ## Installation and Setup
 
+> ### ⚠️ Warning!
+> The provided installation instructions might overwrite existing files in your `$HOME` directory.
+> If you have existing configs you don't want to lose, make sure to back them up first.
+
 One-liner to install the bare repo (overrides existing config files):
 ```fish
 git clone --bare https://github.com/Maelkiz/dotfiles.git "$HOME/.dotfiles" && \
 git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" checkout -f && \
 git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" config --local status.showUntrackedFiles no
+```
+
+Optionally, remove this README:
+```fish
+rm "$HOME/README.md"
 ```
 
 Convenient alias (included in the fish config):
