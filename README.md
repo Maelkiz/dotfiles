@@ -31,7 +31,7 @@ eza \
 
 One-liner to install the bare repo (overrides existing config files):
 ```fish
-git clone --bare https://github.com/Maelkiz/noctalia-niri-dots.git "$HOME/.dotfiles" && \
+git clone --bare https://github.com/Maelkiz/dotfiles.git "$HOME/.dotfiles" && \
 git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" checkout -f && \
 git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" config --local status.showUntrackedFiles no
 ```
