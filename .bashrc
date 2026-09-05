@@ -1,11 +1,30 @@
-# ~/.bashrc
+# Pixi
+export PATH="$HOME/.pixi/bin:$PATH"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+# Starship
+eval "$(starship init bash)"
 
-eval -- "$(/usr/bin/starship init bash --print-full-init)"
-. "$HOME/.cargo/env"
-export JAVA_HOME=/usr/lib/jvm/jdk-25
-export PATH=$JAVA_HOME/bin:$PATH
+# Aliases
+alias ls='eza --group-directories-first --icons always'
+alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
+
+# Vim mode
+set -o vi
+
+# Export Vim mode environment variable for Starship prompt
+update_bash_mode() {
+    case "$READLINE_VI_MODE" in
+        ""|vi-insertion)
+            export VIM_MODE='[INSERT]'
+            ;;
+        vi-command)
+            export VIM_MODE='[NORMAL]'
+            ;;
+    esac
+}
+
+# Update mode before each prompt
+PROMPT_COMMAND="update_bash_mode${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
