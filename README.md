@@ -9,6 +9,7 @@ This is a bare repo containing my desktop environment agnostic configuration fil
 The setup assumes the following are installed on your system (package names might vary by distro):
 ```console
 ttf-jetbrains-mono-nerd \
+wl-clipboard \
 ghostty \
 starship \
 fish \
