@@ -17,6 +17,14 @@ function fish_user_key_bindings
     bind -M insert ctrl-tab accept-autosuggestion
 end
 
+function copy
+    if isatty stdin
+        wl-copy < $argv[1]
+    else
+        wl-copy
+    end
+end
+
 alias ls='eza --group-directories-first --icons always'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME' 
 
