@@ -1,4 +1,5 @@
-set -gx PATH "/home/karl/.pixi/bin" $PATH
+fish_add_path ~/.local/bin
+fish_add_path ~/.pixi/bin
 
 if not status is-interactive
     return
