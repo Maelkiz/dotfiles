@@ -37,7 +37,14 @@
         "cargo test": true,
         "cargo fmt": true
     },
-    "workbench.colorTheme": "Tokyo Night Storm",
-    "editor.wordWrap": "on",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "claudeCode.environmentVariables": [],
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.browser.showInTitleBar": false,
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "chat.disableAIFeatures": true,
+    "claudeCode.hideOnboarding": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "explorer.sortOrder": "type",
 }
