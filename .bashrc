@@ -1,5 +1,8 @@
-# Pixi
-export PATH="$HOME/.pixi/bin:$PATH"
+# Pixi (prepend once, so nested shells don't stack duplicates)
+case ":$PATH:" in
+    *":$HOME/.pixi/bin:"*) ;;
+    *) export PATH="$HOME/.pixi/bin:$PATH" ;;
+esac
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -11,20 +14,8 @@ eval "$(starship init bash)"
 alias ls='eza --group-directories-first --icons always'
 alias dotfiles='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 
-# Vim mode
+# Vim mode (indicator comes from show-mode-in-prompt in ~/.inputrc)
 set -o vi
 
-# Export Vim mode environment variable for Starship prompt
-update_bash_mode() {
-    case "$READLINE_VI_MODE" in
-        ""|vi-insertion)
-            export VIM_MODE='[INSERT]'
-            ;;
-        vi-command)
-            export VIM_MODE='[NORMAL]'
-            ;;
-    esac
-}
-
-# Update mode before each prompt
-PROMPT_COMMAND="update_bash_mode${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+# Drop VIM_MODE inherited from fish so starship doesn't show a stale mode
+unset VIM_MODE
