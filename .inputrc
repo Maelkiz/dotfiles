@@ -1,11 +1,18 @@
 # Vim mode
 set editing-mode vi
 
+# Show vi mode in bash prompt, with fish-style cursor (line in insert, block in normal)
+$if Bash
+set show-mode-in-prompt on
+set vi-ins-mode-string "\1\e[6 q\e[1;34m\2[I]\1\e[0m\2 "
+set vi-cmd-mode-string "\1\e[2 q\e[1;34m\2[N]\1\e[0m\2 "
+$endif
+
 # Ctrl+Backspace
 "\C-H": backward-kill-word
 
 # Ctrl+Delete
-"\C-]": kill-word
+"\e[3;5~": kill-word
 
-# Ctrl+Tab
-"\C-\C-I": complete
+# Ctrl+Tab (kitty sends CSI u for it)
+"\e[9;5u": complete
