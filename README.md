@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is a bare repo containing my configuration files for a [niri](https://github.com/YaLTeR/niri) + [Noctalia](https://github.com/noctalia-dev/noctalia) desktop.
+This is a bare repo containing my configs for a [niri](https://github.com/YaLTeR/niri) + [Noctalia](https://github.com/noctalia-dev/noctalia) desktop, which I am currently daily-driving on a thinkpad running [CachyOS](https://cachyos.org/).
 
 ---
 
@@ -14,10 +14,11 @@ wl-clipboard \
 ghostty \
 starship \
 fish \
-code \
+code \ # I use visual-studio-code-bin from the AUR
 bash \
-git \
+nvim \
 vim \
+git \ 
 eza
 ```
 
