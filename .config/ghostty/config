@@ -1,4 +1,4 @@
-background-opacity = 0.95
+background-opacity = 0.85
 background-blur = true
 
 window-decoration = false
@@ -10,3 +10,5 @@ font-size = 12
 
 keybind = ctrl+tab=unbind
 keybind = ctrl+shift+tab=unbind
+theme = noctalia
+confirm-close-surface = false
