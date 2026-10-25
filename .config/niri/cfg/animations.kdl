@@ -1,4 +1,13 @@
 animations {
+    workspace-switch {
+        off
+    }
+    window-open {
+        off
+    }
+    window-close {
+        off
+    }
     horizontal-view-movement {
         spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
     }
