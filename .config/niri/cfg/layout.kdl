@@ -1,0 +1,17 @@
+layout {
+    gaps 6 
+    center-focused-column "never" 
+    always-center-single-column
+    background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+
+    focus-ring {
+        width 2
+    }
+
+    preset-column-widths {
+        proportion 0.5
+        proportion 1.0
+    }
+
+    struts {}
+}

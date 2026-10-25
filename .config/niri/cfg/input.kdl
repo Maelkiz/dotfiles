@@ -1,0 +1,13 @@
+input {
+    keyboard {
+        xkb {
+            layout "us" // Use the American keyboard layout
+        }
+        numlock // Enable numlock on startup
+    }
+
+    touchpad {
+        tap // Enable tap-to-click
+        natural-scroll // Enable natural scrolling
+    }
+}
