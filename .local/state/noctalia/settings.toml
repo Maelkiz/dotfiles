@@ -146,7 +146,7 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "kitty", "niri", "qt", "starship" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt", "starship" ]
     community_ids = [ "discord", "neovim" ]
 
 [wallpaper]
