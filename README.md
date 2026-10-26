@@ -11,7 +11,7 @@ The setup assumes the following are installed on your system (package names migh
 paru -S --needed \
   niri noctalia xwayland-satellite polkit-gnome \
   kitty fish starship \
-  ttf-jetbrains-mono-nerd ttf-meslo-nerd \
+  ttf-jetbrains-mono-nerd \
   wl-clipboard wl-mirror jq \
   brave-bin nautilus visual-studio-code-bin \
   neovim vim eza btop cava fastfetch \

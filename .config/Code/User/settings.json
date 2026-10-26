@@ -26,8 +26,8 @@
             "approveResponse": true
         }
     },
-    "terminal.integrated.fontFamily": "'MesloLGS Nerd Font Mono'",
-    "editor.fontFamily": "'MesloLGS Nerd Font Mono', 'Droid Sans Mono', monospace",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'Droid Sans Mono', monospace",
     "claudeCode.preferredLocation": "panel",
     "editor.rulers": [
         80,
