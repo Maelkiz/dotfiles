@@ -15,7 +15,7 @@ paru -S --needed \
   wl-clipboard wl-mirror jq \
   brave-bin nautilus visual-studio-code-bin \
   neovim ripgrep fd make gcc unzip tree-sitter-cli \
-  vim eza btop cava fastfetch \
+  eza btop cava fastfetch \
   bibata-cursor-theme adw-gtk-theme papirus-icon-theme qt6ct
 ```
 
