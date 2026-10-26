@@ -20,10 +20,6 @@ nvim \
 vim \
 git \ 
 eza
-```
-
-The desktop (niri, Noctalia and the apps it launches and themes) additionally needs:
-```console
 niri \
 noctalia \
 xwayland-satellite \
