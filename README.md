@@ -24,8 +24,6 @@ VS Code uses the [One Dark Pro](https://marketplace.visualstudio.com/items?itemN
 code --install-extension zhuangtongfa.material-theme
 ```
 
-Noctalia generates the colour themes for niri, kitty, GTK, Qt, btop, cava, starship and Neovim from the current palette, so those files change whenever the wallpaper or colour scheme does.
-
 ---
 
 ## Installation and Setup
