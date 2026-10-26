@@ -19,7 +19,7 @@ paru -S --needed \
   bibata-cursor-theme adw-gtk-theme papirus-icon-theme qt6ct
 ```
 
-VS Code uses the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme extension:
+VS Code uses the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme extension, specifically its "One Dark Pro Darker" variant:
 ```fish
 code --install-extension zhuangtongfa.material-theme
 ```
