@@ -14,12 +14,6 @@ layer-rule {
 }
 
 window-rule {
-    match app-id="^firefox$"
-    open-on-workspace "browser"
-    open-maximized-to-edges true
-}
-
-window-rule {
     match app-id="^brave-browser$"
     open-on-workspace "browser"
     open-maximized-to-edges true
