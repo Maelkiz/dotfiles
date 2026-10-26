@@ -14,19 +14,9 @@ paru -S --needed \
   ttf-jetbrains-mono-nerd \
   wl-clipboard wl-mirror jq \
   brave-bin nautilus visual-studio-code-bin \
-  neovim vim eza btop cava fastfetch \
+  neovim ripgrep fd make gcc unzip tree-sitter-cli \
+  vim eza btop cava fastfetch \
   bibata-cursor-theme adw-gtk-theme papirus-icon-theme qt6ct
-```
-
-The Neovim config (based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)) additionally needs:
-```console
-neovim \
-ripgrep \
-fd \
-make \
-gcc \
-unzip \
-tree-sitter-cli
 ```
 
 VS Code uses the [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme extension:
