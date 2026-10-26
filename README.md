@@ -8,35 +8,14 @@ This is a bare repo containing my configs for a [niri](https://github.com/YaLTeR
 
 The setup assumes the following are installed on your system (package names might vary by distro):
 ```console
-ttf-jetbrains-mono-nerd \
-ttf-meslo-nerd \
-wl-clipboard \
-ghostty \
-starship \
-fish \
-code \ # I use visual-studio-code-bin from the AUR
-bash \
-nvim \
-vim \
-git \ 
-eza
-niri \
-noctalia \
-xwayland-satellite \
-polkit-gnome \
-kitty \
-brave-bin \
-nautilus \
-wl-mirror \
-jq \
-libnotify \
-bibata-cursor-theme \
-adw-gtk-theme \
-papirus-icon-theme \
-qt6ct \
-btop \
-cava \
-fastfetch
+paru -S --needed \
+  niri noctalia xwayland-satellite polkit-gnome \
+  kitty fish starship \
+  ttf-jetbrains-mono-nerd ttf-meslo-nerd \
+  wl-clipboard wl-mirror jq \
+  brave-bin nautilus visual-studio-code-bin \
+  neovim vim eza btop cava fastfetch \
+  bibata-cursor-theme adw-gtk-theme papirus-icon-theme qt6ct
 ```
 
 The Neovim config (based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)) additionally needs:
