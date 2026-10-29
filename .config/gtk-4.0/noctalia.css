@@ -4,6 +4,9 @@
 * stylelint-disable at-rule-no-unknown
 */
 
+/* App-scoped CSS of enabled community GTK extensions; Noctalia maintains this file. */
+@import url("noctalia-extensions.css");
+
 @define-color accent_color #bfc0de;
 @define-color accent_bg_color #bfc0de;
 @define-color accent_fg_color #262626;
@@ -95,13 +98,13 @@
     --sidebar-backdrop-color: @window_bg_color;
     --sidebar-border-color: @window_bg_color;
 
-    --warning-bg-color: #4449c2;
-    --warning-fg-color: #dbdcf0;
+    --warning-bg-color: #545561;
+    --warning-fg-color: #cecfeb;
     --warning-color: #cecfeb;
 
     --success-color: #bfc0de;
-    --success-bg-color: #4447a7;
-    --success-fg-color: #dddeee;
+    --success-bg-color: #50515d;
+    --success-fg-color: #c1c2e0;
     
     --shade-color: rgba(0, 0, 0, 0.36);
 }
