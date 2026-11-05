@@ -5,7 +5,7 @@ if not status is-interactive
 end
 
 starship init fish | source
-
+set -gx SDL_VIDEODRIVER wayland
 set -g fish_greeting
 
 function fish_user_key_bindings
